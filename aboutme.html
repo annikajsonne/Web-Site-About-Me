@@ -1,39 +1,98 @@
+<!DOCTYPE html>
 <html>
-    <!-- naming the page -->
-    <head><title>About Me</title><meta charset =“UTF-8”></head>
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <style>
+        .navbar-box {
+            background-color: magenta;
+            padding: 20px;
+        }
+        .navbar-center {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar-item a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Helvetica';
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="lightgreen">
+    <div class="navbar-box">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-center">
+                    <div class="navbar-item">
+                        <a href="index.html">Home</a>
+                    </div>
+                    
+                    <div class="navbar-item">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
     <center><h1><font color="hotpink">About Me</font></h1></center>
-    <body bgcolor="lightgreen">
-        <!-- photo of me -->
-        <center><img src="IMG_9853.JPG" width="150" alt="a photo of me"></center>
-        <h3><font color="teal">Short Description!</font></h3>
-        <p>
-            <!-- Description about me -->
-            As you may know, my name is Annika! I am a fourth year BS in Computer Science student at the University of Denver. I am from 
-            California, and I moved for the first time when I came to DU for college. I love Colorado, and at the moment, I am planning on
-            staying here after graduation. This past summer I worked in Chile at El Centro De Inteligencia Terretorial as a programming intern.
-            I speak Spanish, and this was a great opportunity to get me out of my comfort zone while also practicing my coding skills in a professional
-            environment. Chile was amazing, I was able to explore a few different parts of it, and I definetely left a piece of my heart there.
-            I currently work at Urban Outfitters in the Cherry Creek Mall, and I started working there in June 2022. The job is amazing
-            for me, as I love clothes and I get 40%-60% off on clothes there! I also met some of my best friends while working at the 
-            store, and I am super grateful for it! Working here is why I am so interested in fashion, as seeing all the clothes 
-            and people inspire me.
-        </p>
-        <h3><font color="teal">My Hobbies</font></h3>
-        <ul>
-            <li>Shopping</li>
-            <li>Swimming</li>
-            <li>Watching TV</li>
-            <li>Painting</li>
-            <li>Napping</li>
-        </ul>
-        <h3><font color="teal">Photos from my Summer in Chile:</font></h3>
-        <!-- photos -->
-        <center>
-        <img src="IMG_0991.JPG" width="200" alt= "Me and my friend in Santiago">
-        <img src="IMG_2239.JPG" width="200" alt = "My Outfit in Buenos Aires">
-        <img src="IMG_2525.JPG" width="200" alt = "My Outfit in Lima Peru">
-        <img src="IMG_2999.JPG" width="200" alt = "My Outfit in Santiago with a friend">
-        </center>
-        <center><a href="https://cs-classroom-2023-comp-3410.github.io/day-02-portfolio-basic-html-annikajsonne/index.html">Back to Home</a></center>
-    </body>
+    
+    <!-- Photo of me -->
+    <center><img src="IMG_9853.JPG" width="150" alt="a photo of me"></center>
+    
+    <h3><font color="teal">Short Description!</font></h3>
+    <p>
+        <!-- Description about me -->
+        As you may know, my name is Annika! I am a fourth year BS in Computer Science student at the University of Denver. I am from 
+        California, and I moved for the first time when I came to DU for college. I love Colorado, and at the moment, I am planning on
+        staying here after graduation. This past summer I worked in Chile at El Centro De Inteligencia Terretorial as a programming intern.
+        I speak Spanish, and this was a great opportunity to get me out of my comfort zone while also practicing my coding skills in a professional
+        environment. Chile was amazing, I was able to explore a few different parts of it, and I definitely left a piece of my heart there.
+        I currently work at Urban Outfitters in the Cherry Creek Mall, and I started working there in June 2022. The job is amazing
+        for me, as I love clothes and I get 40%-60% off on clothes there! I also met some of my best friends while working at the 
+        store, and I am super grateful for it! Working here is why I am so interested in fashion, as seeing all the clothes 
+        and people inspire me.
+    </p>
+    
+    <!-- My Hobbies -->
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h3 class="title is-3"><font color="teal">My Hobbies</font></h3>
+                <div class="level">
+                    <div class="level-item">
+                        <ul>
+                            <li>Shopping</li>
+                            <li>Swimming</li>
+                            <li>Watching TV</li>
+                            <li>Painting</li>
+                            <li>Napping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h3><font color="teal">Photos from my Summer in Chile:</font></h3>
+    
+    <!-- Photos -->
+    <center>
+        <img src="IMG_0991.JPG" width="200" alt="Me and my friend in Santiago">
+        <img src="IMG_2239.JPG" width="200" alt="My Outfit in Buenos Aires">
+        <img src="IMG_2525.JPG" width="200" alt="My Outfit in Lima Peru">
+        <img src="IMG_2999.JPG" width="200" alt="My Outfit in Santiago with a friend">
+    </center>
+    
+    <center><a href="index.html">Back to Home</a></center>
+</body>
 </html>
