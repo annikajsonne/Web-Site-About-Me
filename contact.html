@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <style>
+        .navbar-box {
+            background-color: magenta;
+            padding: 20px;
+        }
+        .navbar-center {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar-item a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Helvetica';
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="lightyellow">
+    <div class="navbar-box">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-center">
+                    <div class="navbar-item">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                    
+                    <div class="navbar-item">
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Contact Me</h1>
+            <p class="subtitle has-text-centered"><font color="hotpink">Fill this out to contact me!</font></p>
+            <form action="mailto:annika.sonne@du.edu?subject=Contact%20Form%20Submission" method="post" enctype="text/plain">
+                <div class="field">
+                    <label class="label" for="Name">Name:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="Name" name="Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="Email">Email:</label>
+                    <div class="control">
+                        <input class="input" type="email" id="Email" name="Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="Message">Message:</label>
+                    <div class="control">
+                        <textarea class="textarea" id="Message" name="Message" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="has-text-centered">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+        </section>
+    </center>
+</body>
+</html>

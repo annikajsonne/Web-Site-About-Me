@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <style>
+        .navbar-box {
+            background-color: magenta;
+            padding: 20px;
+        }
+        .navbar-center {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar-item a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Helvetica';
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-box">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-center">
+                    <div class="navbar-item">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="section">
+        <div class="container">
+            <center>
+                <h1 class="title has-text-centered">My Projects</h1>
+            </center>
+            <div class="columns is-multiline"> <!-- Added is-multiline for responsiveness -->
+                <!-- Project 1 -->
+                <div class="column is-half" style="background-color: palevioletred;">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Unknown-1.jpeg" alt="Project 1">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">Project 1</p>
+                            <p class="subtitle">Short Description</p>
+                            <p>Some info about project 1!!!!!!!!!</p>
+                            <a href="https://www.housebeautiful.com/lifestyle/gardening/g13074130/beautiful-flower-images/" class="button is-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="column is-half" style="background-color: rebeccapurple;">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Unknown.jpeg" alt="Project 2">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">Project 2</p>
+                            <p class="subtitle">Short Description</p>
+                            <p>project 2 infooooo.</p>
+                            <a href="https://www.housebeautiful.com/lifestyle/gardening/g13074130/beautiful-flower-images/" class="button is-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <center><a href="index.html">Back to Home</a></center>
+</body>
+</html>
